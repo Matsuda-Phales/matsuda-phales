@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(image_gallery.css);
+
+body {
+	background-color: #fcdf1d;
+	color: #5f5039;
+	font-size: 100%;
+	line-height: 1.5;
+	padding: 0;
+	
+	margin-top: 0;
+	margin-bottom: 0;
+
+	   /*  width: 100%;
+    height: 100%;
+    overflow: hidden;*/
+}
+
+#sub {
+   width: 1300px;
+   height: 756px;
+   background-color:#f9b2dc;
+   background-image: url(../images/background4.png);
+   background-repeat: no-repeat;
+	margin: 0 auto 0 auto;
+}
+
+
+/* 基本レイアウト ここまで↑ */
+
+/* ナビ ナビ ナビ ナビ ナビ領域*/
+
+nav {
+    /*position: fixed;  固定位置 */	
+    
+	height: 80px;
+	width: 1146px;
+ 	margin: 0 auto 0 auto;
+ 	padding-top: 30px;
+ 	text-align: center;
+ 	background-color: #35b5d2;
+	text-align: center;
+
+}
+nav ul {
+	overflow: hidden;
+	list-style-type: none;
+	
+	padding-left: 10px;
+	padding-top: 9px;
+
+}
+nav ul li {
+	float: left;
+	width: 120px;
+	margin: 0 20px 0 auto;
+	height: 43px;
+}
+		/*↓CSSスプライト↓CSSスプライト↓CSSスプライト↓CSSスプライト↓CSSスプライト*/
+	nav ul li a {
+		overflow: hidden;/*画面表示上の溢れを防止するためのもの*/
+		display: block;/*インライン要素からブロック要素へ変える*/
+		padding: 44px;/*高さを0した状態でブロックの余白を設ける*/
+		height: 0;/*高さを0にする*/
+		transition: background-color 0.5s ease, box-shadow 0.5s ease; /* 背景色とボックスシャドウの変化をフェード */
+}
+
+	/* 各リンクのスプライト画像 */
+	nav ul li#nav_home a {
+		background-image: url(../images/nav_1.jpg);
+	}
+	nav ul li#nav_profile a {
+		background-image: url(../images/nav_2.jpg);
+	}
+	nav ul li#nav_works a {
+		background-image: url(../images/nav_3.jpg);
+	}
+	nav ul li#nav_contact a {
+		background-image: url(../images/nav_4.jpg);
+	}
+
+ /* ホバー時やアクティブ状態のスタイル */
+	#index #nav_home a,
+	#profile #nav_profile a,
+	#works #nav_works a,
+	#contact#nav_contact a,
+	nav ul li a:hover {
+		background-position:  0 -48px;
+		color: #fff;
+		box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5); /* 光のエフェクト */
+    background-color: #555; /* 背景色も変化 */
+}
+
+/* クリック時（アクティブ時）のエフェクト */
+	nav ul li a:active {
+		background-position: 0 -96px; /* スプライト画像の位置調整 */
+		box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.5); /* より強い光 */
+		background-color: #222; /* 背景色の変更 */
+	}
+
+	
+	/*↑CSSスプライト↑CSSスプライト↑CSSスプライト↑CSSスプライト↑CSSスプライト*/
+/* ↑ナビ ナビ ナビ ナビ ナビ領域*/
+
+/*ローディング　メインコンテンツ↓ここから*/
+
+#gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* 横幅を画面全体に */
+    height: 100%; /* 高さを画面全体に */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* 背景を透明にする */
+    z-index: 9999;
+    opacity: 1; /* 初期状態は不透明 */
+    transition: opacity 0.8s ease; /* フェード効果のトランジションを0.8秒に設定 */
+}
+
+/* フェードアウト用のクラス */
+.fade-out {
+    opacity: 0; /* 透明 */
+    transition: opacity 0.8s ease; /* フェードアウトのトランジション */
+}
+
+/* GIFのサイズを画面いっぱいに調整 */
+#gif-container img {
+    width: 100%; /* 横幅を画面全体に合わせる */
+    height: 100%; /* 高さを画面全体に合わせる */
+    object-fit: cover; /* アスペクト比を維持しつつ全体に表示 */
+}
+
+/* メインコンテンツは最初非表示 */
+#main-content {
+    display: none;
+}
+/*ローディング　メインコンテンツ↑ここまで*/
+
+/*コンテンツ コンテンツ コンテンツ コンテンツ↓ここから*/
+#contens{
+	overflow: hidden;/*画面表示上の溢れを防止するためのもの*/
+	width: 1146px;
+	height: 560px;
+	
+	background-color: #f7c6d2;
+
+	margin: 0 auto ;/*上下　左右*/
+}
+.grad {
+	background: linear-gradient(to bottom, #f9b5ce,#f9e3eb);
+}
+	/*プロフィール プロフィール ↓ここから*/
+	
+	.Profile_img {
+	    float: left;
+	overflow: hidden;
+		margin: 80px auto 50px 50px;
+	}
+	.waku {
+		float: right;
+		text-align: left;
+
+		margin: 50px 60px auto auto;
+     }
+	caption {
+	    text-align: left;
+	    font-size: 20px;
+	}
+	/*プロフィール プロフィール↑ここまで*/
+
+/*コンテンツ コンテンツ コンテンツ コンテンツ↑ここまで*/
+
+/*↓ギャラリー↓ギャラリー↓ギャラリー↓ギャラリーここから*/
+
+    /* 小さい画像のスタイル */
+    ul li img {
+        width: 100px; /* サムネイルのサイズを設定 */
+        transition: transform 0.3s ease; /* スムーズな移動アニメーションを追加 */
+    }
+
+    /* ホバー時の動き */
+    ul li img:hover {
+        transform: translateY(-10px); /* 上に10px移動 */
+    }
+
+	/* 画像表示領域のスタイル */
+	#bigimg {
+
+	  opacity: 1;
+	  transition: opacity 0.3s ease; /* 0.5秒でフェードイン・フェードアウト */
+	}
+
+	/* フェードアウト用クラス */
+	.fade-out {
+	  opacity:0.5;
+	}
+
+/*↑ギャラリー↑ギャラリー↑ギャラリー↑ギャラリーここまで*/
+
+
+/*フッター領域 フッター領域 フッター領域 フッター領域*/
+
+
+footer {
+	text-align: center;
+	background-color: #35b5d2;
+	color: #fff;
+	width: 1146px;
+	
+	height: 66px;
+	margin: 0 auto 0;
+}
+
+footer #f {
+	line-height: 60px;
+}
