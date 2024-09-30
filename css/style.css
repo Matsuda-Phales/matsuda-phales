@@ -3,7 +3,9 @@
 /* 基本レイアウト ここから↓ */
 @import url(image_gallery.css);
 
+
 body {
+	/*width: 1300px;*/
 	background-color: #fcdf1d;
 	color: #5f5039;
 	font-size: 100%;
@@ -21,10 +23,12 @@ body {
 #sub {
    width: 1300px;
    height: 756px;
+   /*height: 756px*/;
    background-color:#f9b2dc;
+   
    background-image: url(../images/background4.png);
    background-repeat: no-repeat;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0  auto;
 }
 
 
@@ -137,7 +141,8 @@ nav ul li {
 /* メインコンテンツは最初非表示 */
 #main-content {
     display: none;
-    background: radial-gradient(white, black);
+	background-color: #f7c6d2;
+
 }
 /*ローディング　メインコンテンツ↑ここまで*/
 
@@ -146,10 +151,12 @@ nav ul li {
 	overflow: hidden;/*画面表示上の溢れを防止するためのもの*/
 	width: 1146px;
 	height: 560px;
-	
-	background-color: #f7c6d2;
-
 	margin: 0 auto ;/*上下　左右*/
+
+
+}
+.top {
+	background-image: url(../images/top_img.jpg);
 }
 .grad {
 	background: linear-gradient(to bottom, #f9b5ce,#f9e3eb);
