@@ -137,6 +137,7 @@ nav ul li {
 /* メインコンテンツは最初非表示 */
 #main-content {
     display: none;
+    background: radial-gradient(white, black);
 }
 /*ローディング　メインコンテンツ↑ここまで*/
 
@@ -211,10 +212,10 @@ footer {
 	color: #fff;
 	width: 1146px;
 	
-	height: 66px;
+	height: 86px;
 	margin: 0 auto 0;
 }
 
 footer #f {
-	line-height: 60px;
+	line-height: 80px;
 }
