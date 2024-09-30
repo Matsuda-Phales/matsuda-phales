@@ -165,19 +165,32 @@ nav ul li {
 	
 	.Profile_img {
 	    float: left;
-	overflow: hidden;
+    	overflow: hidden;
 		margin: 80px auto 50px 50px;
 	}
-	.waku {
+	.waku1 {
+	    width: 60%;
 		float: right;
+		overflow: hidden;
 		text-align: left;
-
+		border: 1px solid #f58698;
 		margin: 50px 60px auto auto;
      }
-	caption {
-	    text-align: left;
-	    font-size: 20px;
-	}
+
+	.waku2 {
+		float: right;
+		overflow: hidden;
+
+		border: 1px solid #f58698;
+
+		margin: 30px 125px auto 0;
+     }
+
+.Profile_time {
+    	overflow: hidden;
+		float: right;
+		margin: 10px 50px auto auto;
+}
 	/*プロフィール プロフィール↑ここまで*/
 
 /*コンテンツ コンテンツ コンテンツ コンテンツ↑ここまで*/
@@ -207,6 +220,10 @@ nav ul li {
 	  opacity:0.5;
 	}
 
+   #thumb-img li{
+    text-align: center;
+	margin: auto 30px auto auto;
+}
 /*↑ギャラリー↑ギャラリー↑ギャラリー↑ギャラリーここまで*/
 
 
