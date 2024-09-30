@@ -22,7 +22,7 @@ function Img1() {
 }
 
 function Img2() {
-  changeImage("images/img7.jpg");
+  changeImage("images/img2.jpg");
 }
 
 function Img3() {
