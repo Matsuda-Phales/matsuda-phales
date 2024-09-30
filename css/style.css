@@ -173,7 +173,7 @@ nav ul li {
 		float: right;
 		overflow: hidden;
 		text-align: left;
-		border: 1px solid #f58698;
+		/*border: 1px solid #f58698;*/
 		margin: 100px 60px auto auto;
      }
 
@@ -181,7 +181,7 @@ nav ul li {
 		float: right;
 		overflow: hidden;
 
-		border: 1px solid #f58698;
+		/*border: 1px solid #f58698;*/
 
 		margin: 100px 125px auto 0;
      }
