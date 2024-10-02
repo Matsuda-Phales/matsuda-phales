@@ -173,17 +173,17 @@ nav ul li {
 		float: right;
 		overflow: hidden;
 		text-align: left;
-		/*border: 1px solid #f58698;*/
-		margin: 100px 60px auto auto;
+		border: 1px solid #f58698;
+		margin: 50px 60px auto auto;
      }
 
 	.waku2 {
 		float: right;
 		overflow: hidden;
 
-		/*border: 1px solid #f58698;*/
+		border: 1px solid #f58698;
 
-		margin: 100px 125px auto 0;
+		margin: 30px 125px auto 0;
      }
 
 .Profile_time {
